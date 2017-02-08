@@ -1,0 +1,20 @@
+{% load cms_tags menu_tags sekizai_tags static thumbnail %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Multilanguage CMS{% endblock %}</title>
+    {% render_block "css" %}
+</head>
+
+<body>
+    <div class="navigation">
+        {% block navigation %}{% endblock %}
+    </div>
+    {% cms_toolbar %}
+    <div id="content">
+        {% block content %}{% endblock %}
+    </div>
+    {% render_block "js" %}
+</body>
+</html>
