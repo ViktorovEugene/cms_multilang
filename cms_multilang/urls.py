@@ -16,12 +16,18 @@ Including another URLconf
 from django.conf import settings
 from django.conf.urls import url, include
 from django.contrib import admin
+from django.conf.urls.i18n import i18n_patterns
+from django.views.i18n import javascript_catalog
 from django.views.static import serve
 
 urlpatterns = [
+    url(r'^jsi18n/(?P<packages>\S+?)/$', javascript_catalog),
+]
+
+urlpatterns += i18n_patterns(
     url(r'^admin/', admin.site.urls),
     url(r'^', include('cms.urls')),
-]
+)
 
 if settings.DEBUG:
     urlpatterns += [

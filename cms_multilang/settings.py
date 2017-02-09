@@ -129,12 +129,13 @@ AUTH_PASSWORD_VALIDATORS = [
 LANGUAGE_CODE = 'en-us'
 
 LANGUAGES = [
-    ('en-us', 'English'),
+    ('en', 'English'),
+    ('en-us', 'English US'),
 ]
 
 TIME_ZONE = 'UTC'
 
-USE_I18N = False
+USE_I18N = True
 
 USE_L10N = False
 
@@ -170,16 +171,31 @@ CMS_LANGUAGES = {
             'hide_untranslated': True,
             'public': True,
             'redirect_on_fallback': False,
-        }
+        },
+        {
+            'code': 'en-us',
+            'name': 'English US',
+            'hide_untranslated': True,
+            'public': True,
+            'redirect_on_fallback': False,
+        },
     ],
     'default': {
-        'fallbacks': ['en'],
-        'redirect_on_fallback': True,
+        'fallbacks': [],
+        'redirect_on_fallback': False,
         'public': True,
-        'hide_untranslated': False,
+        'hide_untranslated': True,
     },
 }
 
+
+CMS_PLACEHOLDER_CONF = {
+    None: {
+        # "plugins": ['TextPlugin'],
+        # 'excluded_plugins': ['InheritPlugin'],
+        'language_fallback': False,
+    }
+}
 # Thumbnail settings
 THUMBNAIL_PROCESSORS = (
     'easy_thumbnails.processors.colorspace',
