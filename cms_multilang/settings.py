@@ -44,6 +44,7 @@ INSTALLED_APPS = [
     'treebeard',
     'menus',
     'sekizai',
+    'reversion',
 
     'easy_thumbnails',
     'filer',
