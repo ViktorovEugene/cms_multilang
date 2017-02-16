@@ -22,12 +22,11 @@ from django.views.static import serve
 
 urlpatterns = [
     url(r'^jsi18n/(?P<packages>\S+?)/$', javascript_catalog),
-    url(r'^weblog/', include('zinnia.urls')),
-    url(r'^comments/', include('django_comments.urls')),
 ]
 
 urlpatterns += i18n_patterns(
     url(r'^admin/', admin.site.urls),
+    url(r'^comments/', include('django_comments.urls')),
     url(r'^', include('cms.urls')),
 )
 
