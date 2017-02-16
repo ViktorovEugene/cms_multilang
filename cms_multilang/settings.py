@@ -56,6 +56,7 @@ INSTALLED_APPS = [
     'tagging',
     'zinnia',
     'ckeditor',
+    'zinnia_customized',
     'zinnia_ckeditor',
     'cmsplugin_zinnia',
 
@@ -227,3 +228,9 @@ CKEDITOR_SETTINGS = {
         ['Source']
     ],
 }
+
+
+# Zinnia configuration
+ZINNIA_ENTRY_BASE_MODEL = 'zinnia_customized.models.EntryLocation'
+
+MIGRATION_MODULES = {'zinnia': 'zinnia_customized.zinnia_migrations'}
