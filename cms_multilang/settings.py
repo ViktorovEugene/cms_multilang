@@ -55,6 +55,8 @@ INSTALLED_APPS = [
     'django_comments',
     'tagging',
     'zinnia',
+    'ckeditor',
+    'zinnia_ckeditor',
     'cmsplugin_zinnia',
 
 ]

@@ -5,6 +5,7 @@ cmsplugin-zinnia==0.8.1
 Django==1.9.12
 django-appconf==1.0.2
 django-blog-zinnia==0.17
+django-ckeditor==5.2.1
 django-classy-tags==0.8.0
 django-cms==3.3.3
 django-contrib-comments==1.8.0
@@ -33,3 +34,4 @@ regex==2017.2.8
 six==1.10.0
 Unidecode==0.4.20
 webencodings==0.5
+zinnia-wysiwyg-ckeditor==1.3
