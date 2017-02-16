@@ -52,19 +52,21 @@ INSTALLED_APPS = [
     'cmsplugin_filer_image',
     'djangocms_text_ckeditor',
 
+    # 'django_comments',
+    # 'tagging',
+    # 'zinnia',
+    # 'cmsplugin_zinnia',
+
 ]
 
-MIDDLEWARE = [
+MIDDLEWARE_CLASSES = [
     'cms.middleware.utils.ApphookReloadMiddleware',
-    'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
-    'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
-    'django.contrib.auth.middleware.SessionAuthenticationMiddleware',
-    'django.middleware.locale.LocaleMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
-    'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'django.middleware.locale.LocaleMiddleware',
+    'django.middleware.common.CommonMiddleware',
     'cms.middleware.user.CurrentUserMiddleware',
     'cms.middleware.page.CurrentPageMiddleware',
     'cms.middleware.toolbar.ToolbarMiddleware',
@@ -100,7 +102,7 @@ WSGI_APPLICATION = 'cms_multilang.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'NAME': os.path.join(BASE_DIR, 'db_zinnia.sqlite3'),
     }
 }
 
@@ -127,7 +129,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/1.10/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'en'
 
 LANGUAGES = [
     ('en', 'English'),
@@ -182,7 +184,7 @@ CMS_LANGUAGES = {
         },
     ],
     'default': {
-        'fallbacks': [],
+        'fallbacks': ['en'],
         'redirect_on_fallback': False,
         'public': True,
         'hide_untranslated': True,

@@ -13,7 +13,7 @@ local_settings.py
 media/
 
 env/
-venv/
+venv*/
 **/tmp/
 
 # Django stuff:
