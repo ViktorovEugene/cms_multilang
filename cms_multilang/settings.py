@@ -52,10 +52,10 @@ INSTALLED_APPS = [
     'cmsplugin_filer_image',
     'djangocms_text_ckeditor',
 
-    # 'django_comments',
-    # 'tagging',
-    # 'zinnia',
-    # 'cmsplugin_zinnia',
+    'django_comments',
+    'tagging',
+    'zinnia',
+    'cmsplugin_zinnia',
 
 ]
 
