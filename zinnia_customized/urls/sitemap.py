@@ -1,7 +1,7 @@
 """Urls for the Zinnia sitemap"""
 from django.conf.urls import url
 
-from zinnia.views.sitemap import Sitemap
+from zinnia_customized.views.sitemap import Sitemap
 
 
 urlpatterns = [

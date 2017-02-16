@@ -1,7 +1,7 @@
 """Urls for Zinnia random entries"""
 from django.conf.urls import url
 
-from zinnia.views.random import EntryRandom
+from zinnia_customized.views.random import EntryRandom
 
 
 urlpatterns = [

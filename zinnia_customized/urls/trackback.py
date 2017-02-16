@@ -1,7 +1,7 @@
 """Urls for the Zinnia trackback"""
 from django.conf.urls import url
 
-from zinnia.views.trackback import EntryTrackback
+from zinnia_customized.views.trackback import EntryTrackback
 
 
 urlpatterns = [

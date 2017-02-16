@@ -1,7 +1,7 @@
 """Urls for the Zinnia entries"""
 from django.conf.urls import url
 
-from zinnia.views.entries import EntryDetail
+from zinnia_customized.views.entries import EntryDetail
 
 
 urlpatterns = [

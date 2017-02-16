@@ -2,12 +2,12 @@
 from django.conf.urls import url
 
 from zinnia.urls import _
-from zinnia.views.archives import EntryDay
-from zinnia.views.archives import EntryWeek
-from zinnia.views.archives import EntryYear
-from zinnia.views.archives import EntryMonth
-from zinnia.views.archives import EntryToday
-from zinnia.views.archives import EntryIndex
+from zinnia_customized.views.archives import EntryDay
+from zinnia_customized.views.archives import EntryWeek
+from zinnia_customized.views.archives import EntryYear
+from zinnia_customized.views.archives import EntryMonth
+from zinnia_customized.views.archives import EntryToday
+from zinnia_customized.views.archives import EntryIndex
 
 
 index_patterns = [

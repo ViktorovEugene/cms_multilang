@@ -2,7 +2,7 @@
 from django.conf.urls import url
 
 from zinnia.urls import _
-from zinnia.views.comments import CommentSuccess
+from zinnia_customized.views.comments import CommentSuccess
 
 
 urlpatterns = [

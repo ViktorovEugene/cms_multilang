@@ -2,7 +2,7 @@
 from django.conf.urls import url
 
 from zinnia.urls import _
-from zinnia.views.quick_entry import QuickEntry
+from zinnia_customized.views.quick_entry import QuickEntry
 
 
 urlpatterns = [

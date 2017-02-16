@@ -1,10 +1,10 @@
 """Urls for the zinnia capabilities"""
 from django.conf.urls import url
 
-from zinnia.views.capabilities import RsdXml
-from zinnia.views.capabilities import HumansTxt
-from zinnia.views.capabilities import OpenSearchXml
-from zinnia.views.capabilities import WLWManifestXml
+from zinnia_customized.views.capabilities import RsdXml
+from zinnia_customized.views.capabilities import HumansTxt
+from zinnia_customized.views.capabilities import OpenSearchXml
+from zinnia_customized.views.capabilities import WLWManifestXml
 
 
 urlpatterns = [

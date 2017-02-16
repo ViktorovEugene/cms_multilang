@@ -234,3 +234,5 @@ CKEDITOR_SETTINGS = {
 ZINNIA_ENTRY_BASE_MODEL = 'zinnia_customized.models.EntryLocation'
 
 MIGRATION_MODULES = {'zinnia': 'zinnia_customized.zinnia_migrations'}
+
+CMSPLUGIN_ZINNIA_APP_URLS = ['zinnia_customized.urls']

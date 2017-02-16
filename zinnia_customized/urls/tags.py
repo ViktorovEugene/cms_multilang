@@ -2,8 +2,8 @@
 from django.conf.urls import url
 
 from zinnia.urls import _
-from zinnia.views.tags import TagList
-from zinnia.views.tags import TagDetail
+from zinnia_customized.views.tags import TagList
+from zinnia_customized.views.tags import TagDetail
 
 
 urlpatterns = [

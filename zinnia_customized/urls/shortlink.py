@@ -1,7 +1,7 @@
 """Urls for the Zinnia entries short link"""
 from django.conf.urls import url
 
-from zinnia.views.shortlink import EntryShortLink
+from zinnia_customized.views.shortlink import EntryShortLink
 
 
 urlpatterns = [
